@@ -20,7 +20,7 @@ async def devid(client: Client, message: Message):
        
     await message.reply_photo(
         photo="downloads/developer.jpg",
-        caption=f"""<b> 𝑛𝑎𝑚𝑒 :</b> <a href='tg://user?id={uid}'>{name}</a>\n\n<b> 𝑢𝑠𝑒𝑟 :</b> @{usrnam}""",
+        caption=f"""<b>𝑛𝑎𝑚𝑒 :</b> <a href='tg://user?id={uid}'>{name}</a>\n\n<b>𝑢𝑠𝑒𝑟 :</b> @{usrnam}""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
