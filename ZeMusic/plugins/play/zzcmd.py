@@ -23,9 +23,6 @@ async def zzzback(_, query: CallbackQuery):
                         "• اوامـر القنـاة •", callback_data="zzzch"),
                     InlineKeyboardButton(
                         "• اوامـر الادمـن •", callback_data="zzzad"),
-                ],[
-                    InlineKeyboardButton(
-                        "• اوامــر المطــور •", callback_data="zzzdv"),
                 ],
             ]
         ),
