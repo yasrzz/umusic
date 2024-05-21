@@ -1260,5 +1260,6 @@ def searchMusic(c: Client, m: Message):
             "• كم عدد اللي معطيهم بلوك؟",
             "• أجمل سنة ميلادية مرت عليك ؟",
             "• أوصف نفسك بكلمة؟**",
-        ] word = random.choice(txt)
+        ]
+      word = random.choice(txt)
         m.reply_text(f"- {m.from_user.mention}\n{word}")
