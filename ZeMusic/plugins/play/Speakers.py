@@ -11,7 +11,7 @@ from ZeMusic.utils.database import *
 from pytgcalls.exceptions import (NoActiveGroupCall,TelegramServerError,AlreadyJoinedError)
 
 
-@app.on_message(filters.regex("من في الكول"))
+@app.on_message(filters.regex("^مين في الكول$|^من في الكول$|^من في المكالمه$"))
 async def strcall(client, message):
     assistant = await group_assistant(Mody, message.chat.id)
     try:
@@ -32,7 +32,7 @@ async def strcall(client, message):
 
         # إضافة زر شفاف في الأسفل
         inline_keyboard = InlineKeyboardMarkup([
-            [InlineKeyboardButton("🧚‍♂️تحديثات  البوت ", url=config.SUPPORT_CHAT)],
+            [InlineKeyboardButton("🫦تحديثات السورس ♪", url=config.SUPPORT_CHAT)],
         ])      
 
         await message.reply(f"{text}", reply_markup=inline_keyboard)
@@ -59,6 +59,6 @@ async def strcall(client, message):
 
         # إضافة زر شفاف في الأسفل
         inline_keyboard = InlineKeyboardMarkup([
-            [InlineKeyboardButton("🧚‍♂️تحديثات البوت ", url=config.SUPPORT_CHAT)],
+            [InlineKeyboardButton("🫦تحديثات السورس  ♪", url=config.SUPPORT_CHAT)],
         ])
         await message.reply(f"{text}", reply_markup=inline_keyboard)
