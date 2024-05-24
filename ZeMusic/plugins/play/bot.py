@@ -20,19 +20,19 @@ async def BotMusic(client: Client, message: Message):
         if user_id == 5145609515:
             rank = f"""<a href="tg://user?id={user_id}">مـطـور السـورس</a>"""
         elif user_id == OWNER_ID:
-            rank = f"""<a href="tg://user?id={user_id}">الـمــطـور</a>"""
+            rank = f"""<a href="tg://user?id={user_id}">Dev🏅</a>"""
         else:
             rank = italy
     except Exception as e:
         print(e)
-    await message.reply_text(f"<b>⌯ مرحباً عزيزي :</b> {rank}\n<b> ما هي الاغنيه التي تريد تشغيلها أو البحث عنها</b>")
+    await message.reply_text(f"<b> مرحباً عزيزي :</b> {rank}\n<b> انا بوت لتشغيل لاغاني في المكالمات الصوتيه 🍻  </b>")
 
         
 
 
 @app.on_message(filters.regex(r"^(ايديي|id)$"))
 async def IdMusic(client: Client, message: Message):
-    await message.reply_text(f"<b>↯ ID : ›</b> <code>{message.from_user.id}</code>")
+    await message.reply_text(f"<b>-» ID : ›</b> <code>{message.from_user.id}</code>")
 
 
 
