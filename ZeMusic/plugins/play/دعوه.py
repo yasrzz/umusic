@@ -32,6 +32,7 @@ async def brah3(app :app, message:Message):
              await message.reply(f"{text}")
            except:
              pass
+                  
 @app.on_message(filters.video_chat_ended)
 async def brah2(client, message):
     da = message.video_chat_ended.duration
