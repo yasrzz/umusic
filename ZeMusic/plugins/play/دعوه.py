@@ -12,26 +12,6 @@ from ZeMusic.core.call import Mody
 async def brah(_, msg):
        await msg.reply("<b>‹   تم بدء المكالمه الي وده يسمعنا صوته يتفضل🍻</b>")
        
-
-@app.on_message(filters.video_chat_ended)
-async def brah2(_, msg):
-       await msg.reply("<b>‹ - تم انهاء المحادثه الصوتية 🙁</b>")
-
-
-@app.on_message(filters.video_chat_members_invited)
-async def brah3(app :app, message:Message):
-           text = f"-الحلو {message.from_user.mention} \n- يبيك تصعد :"
-           x = 0
-           for user in message.video_chat_members_invited.users:
-             try:
-               text += f"<a href='tg://user?id={user.id}'>{user.first_name}</a>"
-               x += 1
-             except Exception:
-               pass
-           try:
-             await message.reply(f"{text}")
-           except:
-             pass
                   
 @app.on_message(filters.video_chat_ended)
 async def brah2(client, message):
